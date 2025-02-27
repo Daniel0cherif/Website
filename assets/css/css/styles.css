@@ -1,4 +1,12 @@
-/* Navbar */
+/* Define Color Scheme */
+:root {
+    --primary-color: #0A3D62; /* Deep Blue */
+    --accent-color: #F4C724; /* Golden Yellow */
+    --background-color: #F8F9FA; /* Light Gray */
+    --text-color: #333333; /* Dark Gray */
+    --cta-color: #E74C3C; /* Vibrant Red */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +14,9 @@
 }
 
 body {
-    font-family: 'open sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #333333;
+    background-color: #F8F9FA;
 }
 
 h1, h2, h3 {
@@ -16,7 +25,7 @@ h1, h2, h3 {
 }
 
 header {
-    background-color: #333; /* Dark background */
+    background-color: #222; /* Dark background */
     color: white;
     padding: 15px 20px;
 }
@@ -30,9 +39,11 @@ nav {
 
 /* Title on the Far Left */
 h1 {
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
     margin: 0;
     flex: 1; /* Pushes other items away */
+    color: white;
 }
 
 /* Center Navigation Menu */
@@ -50,17 +61,19 @@ h1 {
     margin: 0;
 }
 
-.menu a:hover {
-    color: rgb(197, 197, 197);
-    font-size: 25px;
-    transition: font-size 0.2s;
-}
-
 .menu a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     padding: 10px;
+}
+
+.menu a:hover {
+    font-family: 'Poppins', sans-serif;
+    color: #F4C724;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.2s;
 }
 
 /* Menu Button (☰) on the Far Right */
@@ -74,6 +87,21 @@ h1 {
     flex: 1; /* Pushes to the right */
     display: flex;
     justify-content: flex-end; /* Aligns to the far right */
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: var(--cta-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
 }
 
 .hero {
@@ -97,6 +125,90 @@ h1 {
     object-fit: cover; /* Ensures video covers the section */
     transform: translate(-50%, -50%); /* Centers the video */
     z-index: -1; /* Places video behind content */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.service {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about, .contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.about {
+    background: url('../assets/images/about-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    background-image: url("G:/AAA work/Website/Photos/contact-background.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #f8b400; /* Highlighted color */
+}
+
+.contact-actions {
+    margin-top: 20px;
+}
+
+.contact-actions .cta {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #f8b400;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.contact-actions .cta:hover {
+    background-color: #d89c00;
 }
 
 /* Footer */
@@ -201,7 +313,7 @@ footer {
     }
 
     .hero {
-        background: url("G:\AAA work\Website\Photos\1fallback.png") no-repeat center center/cover;
+        background: url("../Photos/1fallback.png") no-repeat center center/cover;
     }
 }
 
