@@ -4,11 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Al Ghazal Al Taeer</title>
-        <link rel="stylesheet" href="G:\AAA work\Website\assets\css\css\styles.css">
+        <link rel="stylesheet" href="G:\AAA work\Website\assets\css\css\quotation.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
     </head>
     <body>
-
         <!-- nav bar-->
          <header>
             <nav aria-label="Main navigation">
@@ -30,6 +29,9 @@
          <section class="hero">
             <h2>Get a Customized Quote for Your Logistics Needs</h2>
             <p>Tell us about your requirements, and our experts will provide a tailored solution that meets your business needs.</p>
+            <div class="contact-actions">
+                <a href="G:\AAA work\Website\pages\quotation.html" class="cta">Request a Quote</a>
+            </div>
          </section>
 
          <!-- Quotation Form Section -->
@@ -41,26 +43,36 @@
                 <input type="hidden" name="_subject" value="New Quotation Request">
                 <input type="hidden" name="_captcha" value="false">
         
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
         
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
         
-                <label for="company">Company Name</label>
-                <input type="text" id="company" name="company">
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company">
+                </div>
         
-                <label for="service">Select Service</label>
-                <select id="service" name="service">
-                    <option value="Healthcare Logistics">Healthcare Logistics</option>
-                    <option value="Consumer Goods Distribution">Consumer Goods Distribution</option>
-                    <option value="Retail Supply Chain">Retail Supply Chain</option>
-                    <option value="Environmental Services">Environmental Services</option>
-                    <option value="Automotive Logistics">Automotive Logistics</option>
-                </select>
+                <div class="form-group">
+                    <label for="service">Select Service</label>
+                    <select id="service" name="service">
+                        <option value="Healthcare Logistics">Healthcare Logistics</option>
+                        <option value="Consumer Goods Distribution">Consumer Goods Distribution</option>
+                        <option value="Retail Supply Chain">Retail Supply Chain</option>
+                        <option value="Environmental Services">Environmental Services</option>
+                        <option value="Automotive Logistics">Automotive Logistics</option>
+                    </select>
+                </div>
         
-                <label for="message">Additional Details</label>
-                <textarea id="message" name="message" rows="4"></textarea>
+                <div class="form-group">
+                    <label for="message">Additional Details</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
         
                 <button type="submit">Request Quote</button>
             </form>
