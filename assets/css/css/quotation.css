@@ -7,33 +7,37 @@
     --cta-color: #E74C3C; /* Vibrant Red */
 }
 
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #333333;
-    background-color: #F8F9FA;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
+/* Typography */
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
+/* Header Styling */
 header {
     background-color: #222; /* Dark background */
-    color: white;
+    color: var(--text-color); /* Use the defined text color */
     padding: 15px 20px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between elements */
+    justify-content: space-between;
     padding: 0 20px;
 }
 
@@ -41,19 +45,18 @@ nav {
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
-    margin: 0;
-    flex: 1; /* Pushes other items away */
-    color: white;
+    color: white; /* Set the heading color to white */
     display: flex;
-    align-items: center; /* Center vertically */
+    align-items: center;
+    flex: 1;
 }
 
 /* Center Navigation Menu */
 .menu {
-    flex: 2; /* More space to center properly */
+    flex: 2;
     display: flex;
     justify-content: center;
-    align-items: center; /* Center vertically */
+    align-items: center;
 }
 
 .menu ul {
@@ -62,7 +65,7 @@ h1 {
     gap: 20px;
     padding: 0;
     margin: 0;
-    align-items: center; /* Center vertically */
+    align-items: center;
 }
 
 .menu a {
@@ -71,15 +74,13 @@ h1 {
     font-size: 18px;
     padding: 10px;
     display: flex;
-    align-items: center; /* Center vertically */
+    align-items: center;
+    transition: 0.2s;
 }
 
 .menu a:hover {
     font-family: 'Poppins', sans-serif;
-    color: #F4C724;
-    font-size: 18px;
-    padding: 10px;
-    transition: 0.2s;
+    color: var(--accent-color);
 }
 
 /* Menu Button (☰) on the Far Right */
@@ -90,13 +91,15 @@ h1 {
     font-size: 24px;
     cursor: pointer;
     padding: 10px;
-    flex: 1; /* Pushes to the right */
     display: flex;
-    justify-content: flex-end; /* Aligns to the far right */
-    align-items: center; /* Center vertically */
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
 }
 
+/* ================== */
 /* CTA Button */
+/* ================== */
 .cta-button {
     background-color: var(--cta-color);
     color: white;
@@ -105,38 +108,59 @@ h1 {
     cursor: pointer;
     font-size: 18px;
     margin-left: 20px;
+    transition: background 0.3s;
 }
 
 .cta-button:hover {
     background-color: #c0392b;
 }
 
-/* Hero Section Styles */
+/* ================== */
+/* Hero Section */
+/* ================== */
 .hero {
-    position: relative; /* Needed for absolute positioning of text */
+    position: relative;
     width: 100%;
-    height: 60vh; /* Adjusted viewport height */
-    background-image: url('G:/AAA work/Website/Photos/quotation2.jpg'); /* Set the background image */
-    background-size: cover; /* Ensures the image covers the section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 60vh;
+    background: url('G:/AAA work/Website/Photos/quotation2.jpg') no-repeat center/cover;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; /* Text over the image */
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif; /* Ensure the font matches the defined typography */
 }
 
-.hero h2 {
-    margin-bottom: 10px; /* Add some space below the header */
+.hero h1 {
+    margin-bottom: 10px;
+    color: white;
 }
 
 .hero p {
-    margin-top: 10px; /* Ensure some space above the paragraph */
+    margin-top: 10px;
+    color: white;
 }
 
-/* Quotation Form Styles */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 1;
+}
+
+/* ================== */
+/* Quotation Form */
+/* ================== */
 .quotation-container {
     padding: 20px;
     background-color: #f9f9f9;
@@ -184,21 +208,24 @@ button[type="submit"] {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #0A3D62;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    transition: background 0.3s;
 }
 
 button[type="submit"]:hover {
     background-color: #084a8c;
 }
 
+/* ================== */
 /* Footer */
+/* ================== */
 footer {
-    background-color: #222; /* Dark background */
+    background-color: #222;
     color: white;
     padding: 40px 20px;
     font-size: 16px;
@@ -221,7 +248,7 @@ footer {
 .footer-section h3 {
     margin-bottom: 15px;
     font-size: 18px;
-    color: #ffcc00;
+    color: var(--accent-color);
 }
 
 .footer-section p {
@@ -241,11 +268,11 @@ footer {
 .footer-section ul li a {
     color: white;
     text-decoration: none;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: #ffcc00;
+    color: var(--accent-color);
     text-decoration: underline;
 }
 
@@ -254,11 +281,11 @@ footer {
     color: white;
     font-size: 20px;
     margin-right: 15px;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #ffcc00;
+    color: var(--accent-color);
 }
 
 /* Footer Bottom */
@@ -270,21 +297,23 @@ footer {
     font-size: 14px;
 }
 
+/* ================== */
 /* Responsive Design */
+/* ================== */
 @media (max-width: 768px) {
     .menu {
-        display: none; /* Hide menu initially */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
         left: 0;
         width: 100%;
-        background: #0A3D62;
+        background: var(--primary-color);
         text-align: center;
     }
 
     .menu.active {
-        display: flex; /* Show menu when active */
+        display: flex;
     }
 
     .menu ul {
@@ -294,10 +323,7 @@ footer {
     }
 
     .hero {
-        height: 80vh; /* Reduce height on small screens */
-    }
-
-    .hero {
-        background: url("../Photos/1fallback.png") no-repeat center center/cover;
+        height: 80vh;
+        background: url("../Photos/1fallback.png") no-repeat center/cover;
     }
 }
