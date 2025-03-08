@@ -171,7 +171,6 @@ button:hover {
     margin-top: 10px;
 }
 
-
 /* Hero Section */
 .hero-section {
     display: flex;
@@ -352,5 +351,3 @@ footer {
         margin: 20px 0;
     }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
