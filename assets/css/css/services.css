@@ -99,20 +99,34 @@ h1 {
 
 /* Hero Section */
 .hero {
+    position: relative;
     width: 100%;
     height: 100vh; /* Adjust the height as needed */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('G:/AAA work/Website/Photos/services_background.png'); /* Correctly formatted URL */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
 .hero-content {
     text-align: center;
-    color: white;
+    color: #333333; /* Default color for text in hero-content */
+}
+
+.hero-content h1 {
+    color: var(--text-color); /* Use the defined text color */
 }
 
 /* Services Section */
