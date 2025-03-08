@@ -1,4 +1,5 @@
-/* Define Color Scheme */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
 :root {
     --primary-color: #0A3D62; /* Deep Blue */
     --accent-color: #F4C724; /* Golden Yellow */
@@ -15,10 +16,15 @@
 }
 
 /* Body Styling */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
-    background-color: var(--background-color);
+    background: linear-gradient(to right, #8360c3, #2ebf91);
 }
 
 /* Typography */
@@ -27,90 +33,91 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
-/* Header Styling */
-header {
-    background-color: #222;
-    color: white;
-    padding: 15px 20px;
+/* Add this CSS rule to style the email link */
+a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove the underline */
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+a:hover {
+    color: #F4C724; /* Change color on hover */
 }
 
-/* Title on the Far Left */
-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    margin: 0;
-    flex: 1;
-    color: white;
-    display: flex;
-    align-items: center;
+/* Example of specific styling for email links */
+.email-link {
+    color: var(--text-color); /* Use your desired color */
 }
 
-/* Center Navigation Menu */
-.menu {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.email-link:hover {
+    color: #F4C724; /* Change color on hover */
 }
 
-.menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-}
-
-.menu a {
+/* CTA Button Styles */
+.cta-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.menu a:hover {
-    font-family: 'Poppins', sans-serif;
-    color: var(--accent-color);
-    transition: 0.2s;
-}
-
-/* Menu Toggle Button */
-.menu-toggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
     cursor: pointer;
-    padding: 10px;
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    margin-top: 20px; /* Add margin to lower the buttons */
 }
-
-/* CTA Button */
-.cta-button {
-    background-color: var(--cta-color);
+  
+/* Primary Button */
+.cta-btn.primary {
+    background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-left: 20px;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
 }
-
-.cta-button:hover {
-    background-color: #c0392b;
+  
+.cta-btn.primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 10px rgba(0, 123, 255, 0.3);
+}
+  
+.cta-btn.primary:active {
+    background-color: #00408a;
+    transform: scale(0.98);
+}
+  
+/* Secondary Button */
+.cta-btn.secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(108, 117, 125, 0.2);
+}
+  
+.cta-btn.secondary:hover {
+    background-color: #545b62;
+    box-shadow: 0 6px 10px rgba(108, 117, 125, 0.3);
+}
+  
+.cta-btn.secondary:active {
+    background-color: #3e444a;
+    transform: scale(0.98);
+}
+  
+/* Outlined Button */
+.cta-btn.outlined {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+  
+.cta-btn.outlined:hover {
+    background-color: #007bff;
+    color: white;
+}
+  
+.cta-btn.outlined:active {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: scale(0.98);
 }
 
 /* Hero Section */
@@ -135,6 +142,10 @@ h1 {
     margin-top: 10px;
 }
 
+.hero-content {
+    margin-top: 20px; /* Add margin to lower the buttons */
+}
+
 /* Hero Video */
 .hero-video {
     position: absolute;
@@ -155,13 +166,16 @@ h1 {
     padding: 20px;
     margin-top: 40px; /* Creates space below the hero section */
     z-index: 2; /* Ensures it's above the video */
-    background-color: var(--background-color);
 }
 
 .service {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
+    position: relative;
+    background: #F8F9FA;
+    padding: 15px;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin: 25px;
+    border-radius: 25px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -173,15 +187,29 @@ h1 {
 
 .service img {
     width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
+    height: 200px; /* Set a fixed height */
+    object-fit: contain; /* Ensure the image is not cropped */
     border-radius: 8px;
 }
 
-/*trust testiomonials*/
+.services-grid .service:last-child {
+    grid-column: span 2; /* Make the last service span two columns */
+    justify-self: center; /* Center the last service */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    margin: 20px auto;        /* Center the button horizontally */
+}
+
+#learn-more {
+    display: inline-block;
+}
+
+/*trust testimonials*/
 .trust-testimonials {
-    background-color: #F8F9FA;
     padding: 50px 20px;
     text-align: center;
 }
@@ -256,12 +284,6 @@ h1 {
 .logo-container img {
     width: 150px; /* Adjust size */
     height: auto;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease-in-out;
-}
-
-.logo-container img:hover {
-    filter: grayscale(0%);
 }
 
 /* About & Contact Sections */
@@ -408,8 +430,12 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Show on mobile */
+    }
+
     .menu {
-        display: none;
+        display: none; /* Hide menu by default on mobile */
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -417,10 +443,11 @@ footer {
         width: 100%;
         background: var(--primary-color);
         text-align: center;
+        z-index: 10; /* Ensure the menu is above other elements */
     }
 
     .menu.active {
-        display: flex;
+        display: flex; /* Show menu when active */
     }
 
     .menu ul {
@@ -436,6 +463,18 @@ footer {
     .hero {
         background: url("../Photos/1fallback.png") no-repeat center center/cover;
     }
-}
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+    /* Responsive Services Section */
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        padding: 0 15px; /* Add padding to the sides */
+    }
+
+    .service {
+        margin: 15px 0; /* Adjust margin for mobile */
+    }
+
+    .service img {
+        height: auto; /* Adjust image height for mobile */
+    }
+}

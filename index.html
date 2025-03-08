@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al Ghazal Al Taeer</title>
-    <link rel="stylesheet" href="G:\AAA work\Website\assets\css\css\styles.css">
+    <link rel="stylesheet" href="G:/AAA work/Website/assets/css/css/styles.css">
+    <link rel="stylesheet" href="G:/AAA work/Website/assets/css/css/navbar.css"> <!-- Link to the new navbar.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -13,14 +14,15 @@
     <!-- nav bar -->
     <header>
         <nav aria-label="Main Navigation">
-            <h1>Al Ghazal Al Taeer</h1> <!-- Far left -->
+            <h1>
+                <img src="g:\AAA work\Website\Photos\navlogo-01.png" alt="Al Ghazal Al Taeer Logo" class="logo">
+            </h1>
             <div class="menu">
                 <ul>
-                    <li><a href="G:\AAA work\Website\index.html">Home</a></li>
-                    <li><a href="G:\AAA work\Website\pages\Services.html">Services</a></li>
-                    <li><a href="G:\AAA work\Website\pages\quotation.html">Quote</a></li>
-                    <li><a href="G:\AAA work\Website\pages\contact.html">Contact</a></li>
-                    <li><a href="G:\AAA work\Website\pages\about.html">About</a></li>
+                    <li><a href="G:/AAA work/Website/index.html">Home</a></li>
+                    <li><a href="G:/AAA work/Website/pages/Services.html">Services</a></li>
+                    <li><a href="G:/AAA work/Website/pages/quotation.html">Quote</a></li>
+                    <li><a href="G:/AAA work/Website/pages/contact.html">Contact</a></li>
                 </ul>
             </div>
             <button class="menu-toggle" aria-label="Toggle Menu">☰</button> <!-- Far right -->
@@ -30,68 +32,66 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-video-container">
-            <video class="hero-video" autoplay muted loop poster="G:\AAA work\Website\Photos\1fallback.png">
-                <source src="G:\AAA work\Website\videos\1.mp4" type="video/mp4">
+            <video class="hero-video" autoplay muted loop poster="G:/AAA work/Website/Photos/1fallback.png">
+                <source src="G:/AAA work/Website/videos/1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="hero-content">
             <h1>Reliable Logistics & Supply Chain Solutions for Your Business</h1>
             <p>Fast, Reliable, and Secure Shipping – Anytime, Anywhere</p>
-            <a href="G:\AAA work\Website\pages\quotation.html" class="cta">Get a Quote</a>
-            <button class="cta">Get a Quote</button>
-            <!--button-->
-            <a href="G:\AAA work\Website\pages\services.html" class="cta">Services</a>
-            <button class="cta">Services</button>
+            <button class="cta-btn outlined" onclick="location.href='G:/AAA work/Website/pages/quotation.html'">Get a Quote</button>
+            <button class="cta-btn outlined" onclick="location.href='G:/AAA work/Website/pages/services.html'">Services</button>
         </div>    
     </section>
 
     <!-- Services Section -->
-    <section>
-        <div class="services-container">
-            <h2>Our Key Services</h2>
-            <p>Comprehensive Logistics Tailored to Your Industry</p>
+<section>
+    <div class="services-container">
+        <h2>Our Key Services</h2>
+        <p>Comprehensive Logistics Tailored to Your Industry</p>
+    </div>
+    <div class="services-grid">
+        <div class="service">
+            <img src="G:/AAA work/Website/Photos/services1.jpg" alt="Service Image">
+            <h3>Healthcare Logistics</h3>
+            <p>Safe transport of medical equipment, pharmaceuticals, and consumables.</p>
         </div>
-        <div class="services-grid">
-            <div class="service">
-                <img src="G:\AAA work\Website\Photos\services1.jpg" alt="Service Image">
-                <h3>Healthcare Logistics</h3>
-                <p>Safe transport of medical equipment, pharmaceuticals, and consumables.</p>
-            </div>
-            <div class="service">
-                <img src="G:\AAA work\Website\Photos\services2.jpg" alt="Service Image">
-                <h3>Consumer Goods Distribution</h3>
-                <p>Efficient warehousing and last-mile delivery.</p>
-            </div>
-            <div class="service">
-                <img src="G:\AAA work\Website\Photos\services3.jpg" alt="Service Image">
-                <h3>Retail Supply Chain Solutions</h3>
-                <p>Inventory management, order fulfillment, and distribution.</p>
-            </div>
-            <div class="service">
-                <img src="G:\AAA work\Website\Photos\4.jpg" alt="Service Image">
-                <h3>Fitness & Lifestyle</h3>
-                <p>Secure transportation of fitness and lifestyle products.</p>
-            </div>
-            <div class="service">
-                <img src="G:\AAA work\Website\Photos\5.jpg" alt="Service Image">
-                <h3>Automotive Logistics</h3>
-                <p>Vehicle transport, parts distribution, and fleet solutions.</p>
-            </div>
+        <div class="service">
+            <img src="G:/AAA work/Website/Photos/services2.jpg" alt="Service Image">
+            <h3>Consumer Goods Distribution</h3>
+            <p>Efficient warehousing and last-mile delivery.</p>
         </div>
-        <a href="G:\AAA work\Website\pages\services.html" class="cta">Learn More</a>
-        <button class="cta">Learn More</button>
-    </section>
+        <div class="service">
+            <img src="G:/AAA work/Website/Photos/services3.jpg" alt="Service Image">
+            <h3>Retail Supply Chain Solutions</h3>
+            <p>Inventory management, order fulfillment, and distribution.</p>
+        </div>
+        <div class="service">
+            <img src="G:/AAA work/Website/Photos/service4.jpg" alt="Service Image">
+            <h3>Fitness & Lifestyle</h3>
+            <p>Secure transportation of fitness and lifestyle products.</p>
+        </div>
+        <div class="service">
+            <img src="G:/AAA work/Website/Photos/service5.jpeg" alt="Service Image">
+            <h3>Automotive Logistics</h3>
+            <p>Vehicle transport, parts distribution, and fleet solutions.</p>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="cta-btn primary" id="learn-more" onclick="location.href='G:/AAA work/Website/pages/services.html'">Learn More</button>
+    </div>
+</section>
 
     <!--trust testimonials-->
     <section class="trust-testimonials">
         <div class="trust-badges">
             <div class="badge">
-                <img src="G:\AAA work\Website\Photos\satisfaction_meter.png" alt="1000+ Satisfied Customers">
+                <img src="G:/AAA work/Website/Photos/satisfaction_meter.png" alt="1000+ Satisfied Customers">
                 <p>1000+ Satisfied Customers</p>
             </div>
             <div class="badge">
-                <img src="G:\AAA work\Website\Photos\top_rated.png" alt="Rated #1 in Fast Delivery">
+                <img src="G:/AAA work/Website/Photos/top_rated.png" alt="Rated #1 in Fast Delivery">
                 <p>Rated #1 in Fast Delivery</p>
             </div>
         </div>
@@ -115,9 +115,9 @@
     <section class="client-logos">
         <h2>Trusted by Leading Brands</h2>
         <div class="logo-container">
-            <img src="G:\AAA work\Website\Photos\costumer_one.jpg" alt="Client 1 Logo">
-            <img src="G:\AAA work\Website\Photos\costumer_two.jpg" alt="Client 2 Logo">
-            <img src="G:\AAA work\Website\Photos\costumer_three.jpg" alt="Client 3 Logo">
+            <img src="G:/AAA work/Website/Photos/costumer_one.jpg" alt="Client 1 Logo">
+            <img src="G:/AAA work/Website/Photos/costumer_two.jpg" alt="Client 2 Logo">
+            <img src="G:/AAA work/Website/Photos/costumer_three.jpg" alt="Client 3 Logo">
         </div>
     </section>
 
@@ -134,7 +134,7 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <p>Email: <a href="mailto:support@yourshipping.com">support@yourshipping.com</a></p>
+                    <p>Email: <a href="mailto:ha9617106@gmail.com">ha9617106@gmail.com</a></p>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
@@ -142,29 +142,29 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-clock"></i>
-                    <p>Business Hours: Mon - Fri, 9 AM - 6 PM</p>
+                    <p>Buisness Hours: 24/7</p>
                 </div>
             </div>
     
             <div class="contact-actions">
-                <a href="G:\AAA work\Website\pages\quotation.html" class="cta">Request a Quote</a>
-                <a href="G:\AAA work\Website\pages\contact.html" class="cta">Contact Us</a>
+                <button class="cta" onclick="location.href='G:/AAA work/Website/pages/quotation.html'">Request a Quote</button>
+                <button class="cta" onclick="location.href='G:/AAA work/Website/pages/contact.html'">Contact Us</button>
             </div>
         </div>
     </section>
     
     <!-- JavaScript -->
-    <script src="G:\AAA work\Website\assets\css\js\script.js"></script>
+    <script src="G:/AAA work/Website/assets/css/js/script.js"></script>
     <footer>
         <div class="footer-container">
             <div class="footer-section">
-                <h3>Al Ghazal Al Taeer</h3>
+                <h3>Alghazal Altayr</h3>
                 <p>Your trusted shipping partner, delivering with speed and reliability.</p>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="G:\AAA work\Website\index.html">Home</a></li>
+                    <li><a href="G:/AAA work/Website/index.html">Home</a></li>
                     <li><a href="quotation.html">Get a Quote</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -172,9 +172,9 @@
             </div>
             <div class="footer-section">
                 <h3>Contact</h3>
-                <p>Email: support@yourshipping.com</p>
-                <p>Phone: +971 50-652-0083</p>
-                <p>Location: 123 Logistics St, Your City</p>
+                <p>Email: ha9617106@gmail.com</p>
+                <p>Phone: +971 50 652 0083</p>
+                <p>Location: NGI House 9th floor opposite to Deira City Center, Port Saeed, Dubai.</p>
             </div>
             <div class="footer-section social-links">
                 <h3>Follow Us</h3>
@@ -185,7 +185,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Al Ghazal Al Taeer. All Rights Reserved.</p>
+            <p>&copy; Alghazal Altayr. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
