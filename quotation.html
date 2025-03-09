@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Ghazal Al Taeer - Quotation</title>
+    <link rel="stylesheet" href="../assets/css/css/quotation.css">
+    <link rel="stylesheet" href="../assets/css/css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <h1>
+                <img src="../Photos/navlogo-01.png" alt="Al Ghazal Al Taeer Logo" class="logo">
+            </h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="quotation.html">Quote</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button> <!-- Far right -->
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="videos\2quote.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section class="quotation-container">
+        <h2>Quotation Form</h2>
+        <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+            <input type="hidden" name="_subject" value="New Quotation Request">
+            <input type="hidden" name="_captcha" value="false">
+        
+            <!-- Pick Up Point -->
+            <div class="form-group">
+                <label for="pickup-point">Pick Up Point</label>
+                <select id="pickup-point" name="pickup-point" required>
+                    <option value="" disabled selected>Select Pick Up Point</option>
+                    <option value="Abu Dhabi">Abu Dhabi</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Sharjah">Sharjah</option>
+                    <option value="Ajman">Ajman</option>
+                    <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                    <option value="Fujairah">Fujairah</option>
+                    <option value="Umm Al Quwain">Umm Al Quwain</option>
+                </select>
+            </div>
+
+            <!-- Pick Up Address -->
+            <div class="form-group">
+                <label for="pickup-address">Pick Up Address</label>
+                <input type="text" id="pickup-address" name="pickup-address" required>
+            </div>
+        
+            <!-- Destination -->
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination" required>
+                    <option value="" disabled selected>Select Destination Point</option>
+                    <option value="Abu Dhabi">Abu Dhabi</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Sharjah">Sharjah</option>
+                    <option value="Ajman">Ajman</option>
+                    <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                    <option value="Fujairah">Fujairah</option>
+                    <option value="Umm Al Quwain">Umm Al Quwain</option>
+                </select>
+            </div>
+
+            <!-- Destination Address -->
+            <div class="form-group">
+                <label for="destination-address">Destination Address</label>
+                <input type="text" id="destination-address" name="destination-address" required>
+            </div>
+        
+            <!-- Product Type -->
+            <div class="form-group">
+                <label for="product-type">Product Type</label>
+                <input type="text" id="product-type" name="product-type" required>
+            </div>
+
+            <!-- Package Weight -->
+            <div class="form-group">
+                <label for="weight">Package Weight (kg)</label>
+                <input type="text" id="weight" name="weight" required>
+            </div>
+    
+            <!-- Service Selection -->
+            <div class="form-group">
+                <label for="service">Select Service</label>
+                <select id="service" name="service">
+                    <option value="" disabled selected>Select Shipping Service</option>
+                    <option value="Individual Shipping">Individual Shipping</option>
+                    <option value="Cargo Shipping">Cargo Shipping</option>
+                </select>
+            </div>
+
+            <!-- Dimensions -->
+            <div class="form-group">
+                <label for="dimensions">Package Dimensions (Length, Width, Height in cm)</label>
+                <input type="text" id="dimensions" name="dimensions" required>
+            </div>
+        
+            <!-- Additional Details -->
+            <div class="form-group">
+                <label for="message">Additional Details</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+        
+            <button type="submit">Request Quote</button>
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/script.js"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Alghazal Altayr</h3>
+                <p>Your trusted shipping partner, delivering with speed and reliability.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="quotation.html">Get a Quote</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: ha9617106@gmail.com</p>
+                <p>Phone: +971 50 652 0083</p>
+                <p>Location: NGI House 9th floor opposite to Deira City Center, Port Saeed, Dubai.</p>
+            </div>
+            <div class="footer-section social-links">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Alghazal Altayr. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
