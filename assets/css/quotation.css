@@ -50,18 +50,35 @@ header {
     background-color: #c0392b;
 }
 
-/* Hero Section */
+* Hero Section */
 .hero {
     position: relative;
     width: 100%;
-    height: 60vh;
-    background: url('G:/AAA work/Website/Photos/quotation2.jpg') no-repeat center/cover;
+    height: 100vh; */ Ensures it fully covers the viewport */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--text-color);
-    font-family: 'Montserrat', sans-serif; /* Ensure the font matches the defined typography */
+    color: white;
+    z-index: 1;
+}
+
+.hero-video-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto
+    overflow: hidden; /* Ensures the video doesn't overflow */
+}
+
+.hero-video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Keeps video in the background */
 }
 
 /* Quotation Container */
@@ -220,9 +237,19 @@ footer {
 @media (max-width: 768px) {
     
     .hero {
-        height: 80vh;
-        background: url("../Photos/1fallback.png") no-repeat center/cover;
+        width:  80vh;
+        max-width: 80vh;
     }
+
+    .hero-video-container {
+        height: 100%; /* Ensure the container takes full height */
+    }
+
+    .hero-video {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+    
 
     .quotation-container {
         padding: 30px;

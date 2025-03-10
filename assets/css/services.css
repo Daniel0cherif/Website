@@ -137,7 +137,7 @@ header {
 .hero-content h2 {
     color: black;
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .hero-content p {
@@ -221,7 +221,7 @@ header {
     display: flex;
     flex-direction: column; /* Align text vertically */
     justify-content: flex-start; /* Align items to the top */
-    text-align: left; /* Ensure text is aligned left */
+    text-align: center; /* Ensure text is aligned left */
 }
 
 /* Heading Styling */
@@ -229,52 +229,24 @@ header {
     font-size: 28px;
     margin-bottom: 20px;
     color: black;
-    text-align: left; /* Align the heading to the left */
+    text-align: center; /* Align the heading to the left */
     margin-left: 0; /* Remove any extra left margin */
 }
 
+.Why-Choose-Us h1 {
+    color: black;
+}
 /* Paragraph Styling */
 .Why-Choose-Us p {
     font-size: 18px;
     color: var(--text-color);
+    margin-top: 20px;;
     margin-bottom: 40px;
     text-align: left; /* Align text to the left */
     margin-left: 0; /* Remove any extra left margin */
-}
-
-/* List Styling */
-.Why-Choose-Us .Why-Choose-Us-Li ul {
-    display: flex;
-    justify-content: flex-start; /* Align the list items to the left */
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.Why-Choose-Us .Why-Choose-Us-Li li {
-    margin: 10px 20px;
-    font-size: 18px;
-    color: var(--text-color);
-    text-align: left; /* Align the list items to the left */
-    margin-left: 0; /* Ensure there’s no extra left margin */
-}
-
-/* Image Section */
-.Why-Choose-Us-Img {
-    flex: 1; /* Take up 50% of the width */
-    text-align: center; /* Center the image */
-    background-color: white; /* White background */
-    padding: 20px; /* Add padding around the image */
-    border-radius: 15px; /* Create rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
-}
-
-.Why-Choose-Us-Img img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain the aspect ratio */
-    max-width: 100%; /* Ensure the image is fully responsive */
-    border-radius: 12px; /* Rounded corners for the image */
+    display:flex; 
+    flex-direction: column; 
+    align-items: center
 }
 
 /* Let's Move Section */
@@ -300,6 +272,8 @@ header {
     color: var(--text-color);
     margin-bottom: 40px;
 }
+
+
 
 /* Ensure buttons are on the same line */
 .lets-move .button-container {
@@ -406,8 +380,12 @@ footer {
     }
 
     .hero {
-        background: url("../Photos/1fallback.png") no-repeat center center;
+        background: url('G:/AAA work/Website/Photos/services_background.png') no-repeat center center;
+        background-size: contain;
+        background-position: center;
     }
+
+    .hero 
 
     .footer-container {
         flex-direction: column;
@@ -428,9 +406,6 @@ footer {
         margin-bottom: 20px; /* Add margin below the text section */
     }
 
-    .Why-Choose-Us-Img img {
-        max-width: 100%; /* Ensure the image is fully responsive */
-    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');

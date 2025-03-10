@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
-
+/* Define Color Scheme */
 :root {
     --primary-color: #0A3D62; /* Deep Blue */
     --accent-color: #F4C724; /* Golden Yellow */
@@ -16,109 +15,102 @@
 }
 
 /* Body Styling */
-html, body {
-    width: 100%;
-    overflow-x: hidden; /* Prevent horizontal overflow */
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
-    background: linear-gradient(to right, #8360c3, #2ebf91);
+    background-color: var(--background-color);
 }
 
 /* Typography */
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: var(--primary-color); /* Set headers to primary color (Deep Blue) */
 }
 
-/* Add this CSS rule to style the email link */
-a {
-    color: inherit; /* Inherit the color from the parent element */
-    text-decoration: none; /* Remove the underline */
+/* Header Styling */
+header {
+    background-color: #222;
+    color: white;
+    padding: 15px 20px;
 }
 
-a:hover {
-    color: #F4C724; /* Change color on hover */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
-/* Example of specific styling for email links */
-.email-link {
-    color: var(--text-color); /* Use your desired color */
+/* Title on the Far Left */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    flex: 1;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
-.email-link:hover {
-    color: #F4C724; /* Change color on hover */
+/* Center Navigation Menu */
+.menu {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* CTA Button Styles */
-.cta-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.menu a {
     text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu a:hover {
+    font-family: 'Poppins', sans-serif;
+    color: var(--accent-color);
+    transition: 0.2s;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
     cursor: pointer;
-    margin-top: 20px; /* Add margin to lower the buttons */
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-  
-/* Primary Button */
-.cta-btn.primary {
-    background-color: #007bff;
+
+/* CTA Button */
+.cta-button {
+    background-color: var(--cta-color);
     color: white;
     border: none;
-    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 20px;
 }
-  
-.cta-btn.primary:hover {
-    background-color: #0056b3;
-    box-shadow: 0 6px 10px rgba(0, 123, 255, 0.3);
-}
-  
-.cta-btn.primary:active {
-    background-color: #00408a;
-    transform: scale(0.98);
-}
-  
-/* Secondary Button */
-.cta-btn.secondary {
-    background-color: #6c757d;
-    color: white;
-    border: none;
-    box-shadow: 0 4px 6px rgba(108, 117, 125, 0.2);
-}
-  
-.cta-btn.secondary:hover {
-    background-color: #545b62;
-    box-shadow: 0 6px 10px rgba(108, 117, 125, 0.3);
-}
-  
-.cta-btn.secondary:active {
-    background-color: #3e444a;
-    transform: scale(0.98);
-}
-  
-/* Outlined Button */
-.cta-btn.outlined {
-    background-color: transparent;
-    color: #007bff;
-    border: 2px solid #007bff;
-}
-  
-.cta-btn.outlined:hover {
-    background-color: #007bff;
-    color: white;
-}
-  
-.cta-btn.outlined:active {
-    background-color: #0056b3;
-    border-color: #0056b3;
-    transform: scale(0.98);
+
+.cta-button:hover {
+    background-color: #c0392b;
 }
 
 /* Hero Section */
@@ -141,11 +133,6 @@ a:hover {
 
 .hero p {
     margin-top: 10px;
-    font-size: 24px;
-}
-
-.hero-content {
-    margin-top: 20px; /* Add margin to lower the buttons */
 }
 
 /* Hero Video */
@@ -161,73 +148,40 @@ a:hover {
 
 /* Services Section */
 .services-grid {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
     margin-top: 40px; /* Creates space below the hero section */
     z-index: 2; /* Ensures it's above the video */
+    background-color: var(--background-color);
 }
 
 .service {
-    position: relative;
-    background: #F8F9FA;
-    padding: 15px;
-    padding-left: 25px;
-    padding-top: 25px;
-    margin: 25px;
-    border-radius: 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-.service h2 {
-    color: var(--primary-color);
-    font-size: 24px;
-
-}
-.service h3 {
-    color: var(--primary-color);
-    font-size: 18px;
-}
-.service p {
-    color: var(--text-color);
 }
 
 .services-container {
     text-align: center;
     padding: 60px 20px;
-    font-size: 28;
-}
-.services-container p {
-    font-size: 18px;
 }
 
 .service img {
     width: 100%;
-    height: 200px; /* Set a fixed height */
-    object-fit: contain; /* Ensure the image is not cropped */
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
-.services-grid .service:last-child {
-    grid-column: span 2; /* Make the last service span two columns */
-    justify-self: center; /* Center the last service */
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;  /* Centers horizontally */
-    align-items: center;      /* Centers vertically */
-    margin: 20px auto;        /* Center the button horizontally */
-}
-
-#learn-more {
-    display: inline-block;
-}
-
-/*trust testimonials*/
+/*trust testiomonials*/
 .trust-testimonials {
+    background-color: #F8F9FA;
     padding: 50px 20px;
     text-align: center;
 }
@@ -270,12 +224,12 @@ a:hover {
 }
 
 .testimonial p {
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
 }
 
 .testimonial h4 {
-    margin-top: 16px;
+    margin-top: 10px;
     font-weight: bold;
 }
  /* logos section */
@@ -302,6 +256,12 @@ a:hover {
 .logo-container img {
     width: 150px; /* Adjust size */
     height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.logo-container img:hover {
+    filter: grayscale(0%);
 }
 
 /* About & Contact Sections */
@@ -321,7 +281,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: black;
+    color: white;
     text-align: center;
     padding: 80px 20px;
     display: flex;
@@ -331,7 +291,7 @@ a:hover {
 
 .contact-content {
     max-width: 800px;
-    background: white;
+    background: rgba(0, 0, 0, 0.6);
     padding: 40px;
     border-radius: 10px;
 }
@@ -448,6 +408,26 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: var(--primary-color);
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
 
     .hero {
         height: 80vh;
@@ -456,19 +436,6 @@ footer {
     .hero {
         background: url("../Photos/1fallback.png") no-repeat center center/cover;
     }
-
-    /* Responsive Services Section */
-    .services-grid {
-        grid-template-columns: 1fr; /* Single column layout for mobile */
-        padding: 0 15px; /* Add padding to the sides */
-    }
-
-    .service {
-        margin: 15px 0; /* Adjust margin for mobile */
-        padding: auto;
-    }
-
-    .service img {
-        height: auto; /* Adjust image height for mobile */
-    }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
