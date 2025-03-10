@@ -153,8 +153,8 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     z-index: -1; /* Keeps video in the background */
 }
@@ -451,10 +451,25 @@ footer {
 
     .hero {
         height: 80vh;
+        padding-top: 0;
+        margin-top: 0;
     }
 
     .hero {
         background: url("../Photos/1fallback.png") no-repeat center center/cover;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-video {
+        height: 80vh;
+        object-fit: contain;
     }
 
     /* Responsive Services Section */
