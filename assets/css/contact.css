@@ -187,6 +187,7 @@ button:hover {
     height: 60vh;
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif; /* Ensure the font matches the defined typography */
+    margin-top: 80px; /* Add margin to push the hero section below the nav bar */
 }
 
 .hero-text {
@@ -220,15 +221,12 @@ button:hover {
     padding-left: 10px; /* Shift text a little to the left */
 }
 
-.hero-image {
-    max-width: 50%;
-    height: 100%;
-}
-
 .hero-image img {
+    margin: 400px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    padding: 20px;
 }
 
 /* Map Section */
