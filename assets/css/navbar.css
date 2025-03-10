@@ -108,6 +108,9 @@ flex: 10;
     flex: 1;
 }
 
+.menu.active {
+    display: flex; /* Show the menu */
+} 
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -115,7 +118,7 @@ flex: 10;
     }
 
     .menu {
-        display: none; /* Hide menu by default on mobile */
+        display: none;/* Hide menu by default on mobile */
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -123,7 +126,7 @@ flex: 10;
         width: 100%;
         background: var(--primary-color);
         text-align: center;
-        z-index: 10; /* Ensure the menu is above other elements */
+        z-index: 100; /* Ensure the menu is above other elements */
     }
 
     .menu.active {

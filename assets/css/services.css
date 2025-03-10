@@ -106,11 +106,11 @@ header {
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* Adjust the height as needed */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('Photos\services_background.png') no-repeat center center;
+    background: url('Photos/services_background.png') no-repeat center center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -375,17 +375,11 @@ footer {
 @media (max-width: 768px) {
 
     .hero {
-        height: 80vh;
-        background-size: contain; /* Ensure the entire image is visible */
-    }
-
-    .hero {
         background: url('Photos\services_background.png') no-repeat center center;
         background-size: contain;
         background-position: center;
+        height: 80vh;
     }
-
-    .hero 
 
     .footer-container {
         flex-direction: column;
