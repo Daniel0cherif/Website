@@ -124,6 +124,8 @@ a:hover {
 /* Hero Section */
 .hero {
     position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh; /* Ensures it fully covers the viewport */
     display: flex;
@@ -453,6 +455,7 @@ footer {
         height: 80vh;
         padding-top: 0;
         margin-top: 0;
+        min-height: 90vh;
     }
 
     .hero {
