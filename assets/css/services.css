@@ -165,7 +165,7 @@ header {
 
 .services-container p {
     font-size: 18px;
-    color: var(--text-color);
+    color: black;
     margin-bottom: 40px;
 }
 
