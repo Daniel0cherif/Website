@@ -380,7 +380,7 @@ footer {
     }
 
     .hero {
-        background: url('G:/AAA work/Website/Photos/services_background.png') no-repeat center center;
+        background: url('Photos\services_background.png') no-repeat center center;
         background-size: contain;
         background-position: center;
     }
