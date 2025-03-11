@@ -104,16 +104,15 @@ header {
 
 /* Hero Section */
 .hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('Photos\whyus.jpg') no-repeat center center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh; /* Adjust the height as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('G:/AAA work/Website/Photos/services_background.png'); /* Correctly formatted URL */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 }
 
 /* Hero Content */
