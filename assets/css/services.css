@@ -109,7 +109,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('G:/AAA work/Website/Photos/services_background.png'); /* Correctly formatted URL */
+        background-image: url("Photos\s1.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
