@@ -484,9 +484,10 @@ footer {
         position: absolute;
     }
 
-    .hero-content (
-        text-size: 12px;
-    )
+    .cta-btn {
+        padding: 6px 12px; /* Reduce button padding */
+        font-size: 14px; /* Decrease font size */
+    }
 
     /* Responsive Services Section */
     .services-grid {
