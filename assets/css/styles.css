@@ -502,4 +502,8 @@ footer {
     .service img {
         height: auto; /* Adjust image height for mobile */
     }
+
+    cta-btn outlined {
+        
+    }
 }
