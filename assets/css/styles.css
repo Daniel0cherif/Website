@@ -484,6 +484,10 @@ footer {
         position: absolute;
     }
 
+    .hero-content (
+        text-size: 12px;
+    )
+
     /* Responsive Services Section */
     .services-grid {
         grid-template-columns: 1fr; /* Single column layout for mobile */
@@ -503,7 +507,4 @@ footer {
         height: auto; /* Adjust image height for mobile */
     }
 
-    cta-btn outlined {
-        
-    }
 }
