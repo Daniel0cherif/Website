@@ -242,10 +242,6 @@ footer {
         margin-top: 0;
     }
 
-    .hero {
-        background: url("../Photos/1fallback.png") no-repeat center center/cover;
-    }
-
     .hero h2 {
         font-size: 18px;
     }
