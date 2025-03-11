@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="content-Language" content="ar">
     <title>Al Ghazal Al Taeer</title>
     <link rel="stylesheet" href="assets\css\styles.css">
     <link rel="stylesheet" href="assets\css\navbar.css"> <!-- Link to the new navbar.css -->
@@ -20,10 +21,12 @@
              </h1>
         <div class="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a data-translate="home" href="index.html">Home</a></li>
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="quotation.html">Quote</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><button onclick="translatePage('en')">English</button></li>
+                <li><button onclick="translatePage('ar')">العربية</button></li>
             </ul>
         </div>
             <button class="menu-toggle" aria-label="Toggle Menu">☰</button> <!-- Far right -->
@@ -39,7 +42,7 @@
             </video>
         </div>
         <div class="hero-content">
-            <h1>Reliable Logistics & Supply Chain Solutions for Your Business</h1>
+            <h1 data-translate="heroTitle">Reliable Logistics & Supply Chain Solutions for Your Business</h1>
             <p>Fast, Reliable, and Secure Shipping – Anytime, Anywhere</p>
             <button class="cta-btn outlined" onclick="location.href='quotation.html'">Get a Quote</button>
             <button class="cta-btn outlined" onclick="location.href='Services.html'">Services</button>
@@ -151,6 +154,36 @@
     
     <!-- JavaScript -->
     <script src="assets\css\js\script.js"></script>
+    <script>
+        const translations = {
+    en: {
+        home: "Home",
+        services: "Services",
+        quote: "Quote",
+        contact: "Contact",
+        heroTitle: "Reliable Logistics & Supply Chain Solutions for Your Business"
+    },
+    ar: {
+        home: "الرئيسية",
+        services: "الخدمات",
+        quote: "عرض الأسعار",
+        contact: "اتصل بنا",
+        heroTitle: "حلول لوجستية موثوقة وسلسلة التوريد لأعمالك"
+    }
+};
+
+function translatePage(lang) {
+    document.querySelectorAll("[data-translate]").forEach(el => {
+        let key = el.getAttribute("data-translate");
+        el.textContent = translations[lang][key];
+    });
+
+    // Set text direction
+    document.documentElement.lang = lang;
+    document.body.style.direction = lang === "ar" ? "rtl" : "ltr";
+    document.body.style.textAlign = lang === "ar" ? "right" : "left";
+}
+    </script>
     <footer>
         <div class="footer-container">
             <div class="footer-section">

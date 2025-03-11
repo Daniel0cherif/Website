@@ -237,17 +237,31 @@ footer {
 @media (max-width: 768px) {
     
     .hero {
-        width:  80vh;
-        max-width: 80vh;
+        height: 80vh;
+        padding-top: 0;
+        margin-top: 0;
     }
 
-    .hero-video-container {
-        height: 100%; /* Ensure the container takes full height */
+    .hero {
+        background: url("../Photos/1fallback.png") no-repeat center center/cover;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 12px;
     }
 
     .hero-video {
-        width: 100%;
-        height: auto; /* Maintain aspect ratio */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
+        transform: translate(-50%, -50%);
     }
     
 

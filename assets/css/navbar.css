@@ -111,7 +111,12 @@ flex: 10;
 
 .menu.active {
     display: flex; /* Show the menu */
-} 
+}
+
+#language-switcher:hover {
+    color: var(--accent-color); /* Change color on hover */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
