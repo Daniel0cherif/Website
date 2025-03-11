@@ -109,7 +109,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("Photos\s1.png");
+        background-image: url("../Photos/s1.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -374,7 +374,7 @@ footer {
 @media (max-width: 768px) {
 
     .hero {
-        background: url('Photos\whyus.jpg') no-repeat center center;
+        background: url('Photos/s1.png') no-repeat center center;
         background-size: contain;
         background-position: center;
         height: 80vh;
