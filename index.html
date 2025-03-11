@@ -43,47 +43,47 @@
         </div>
         <div class="hero-content">
             <h1 data-translate="heroTitle">Reliable Logistics & Supply Chain Solutions for Your Business</h1>
-            <p>Fast, Reliable, and Secure Shipping – Anytime, Anywhere</p>
-            <button class="cta-btn outlined" onclick="location.href='quotation.html'">Get a Quote</button>
-            <button class="cta-btn outlined" onclick="location.href='Services.html'">Services</button>
+            <p data-translate="heroSubtitle">Fast, Reliable, and Secure Shipping – Anytime, Anywhere</p>
+            <button data-translate="getQuote"class="cta-btn outlined" onclick="location.href='quotation.html'">Get a Quote</button>
+            <button data-translate="learnMore" class="cta-btn outlined" onclick="location.href='Services.html'">Services</button>
         </div>    
     </section>
 
     <!-- Services Section -->
 <section>
     <div class="services-container">
-        <h2>Our Key Services</h2>
-        <p>Comprehensive Logistics Tailored to Your Industry</p>
+        <h2 data-translate="ourKeyServices">Our Key Services</h2>
+        <p data-translate="comprehensiveLogistics">Comprehensive Logistics Tailored to Your Industry</p>
     </div>
     <div class="services-grid">
         <div class="service">
             <img src="Photos/services1.jpg" alt="Service Image">
-            <h2>Healthcare Logistics</h2>
-            <p>Safe transport of medical equipment, pharmaceuticals, and consumables.</p>
+            <h2 data-translate="healthcareLogistics">Healthcare Logistics</h2>
+            <p data-translate="healthcareLogisticsDesc">Safe transport of medical equipment, pharmaceuticals, and consumables.</p>
         </div>
         <div class="service">
             <img src="Photos/services2.jpg" alt="Service Image">
-            <h2>Consumer Goods Distribution</h2>
-            <p>Efficient warehousing and last-mile delivery.</p>
+            <h2 data-translate="consumerGoodsDistribution">Consumer Goods Distribution</h2>
+            <p data-translate="consumerGoodsDistributionDesc">Efficient warehousing and last-mile delivery.</p>
         </div>
         <div class="service">
             <img src="Photos/services3.jpg" alt="Service Image">
-            <h2>Retail Supply Chain Solutions</h2>
-            <p>Inventory management, order fulfillment, and distribution.</p>
+            <h2 data-translate="retailSupplyChain">Retail Supply Chain Solutions</h2>
+            <p data-translate="retailSupplyChainDesc">Inventory management, order fulfillment, and distribution.</p>
         </div>
         <div class="service">
             <img src="Photos/service4.jpg" alt="Service Image">
-            <h2>Fitness & Lifestyle</h2>
-            <p>Secure transportation of fitness and lifestyle products.</p>
+            <h2 data-translate="fitnessLifestyle">Fitness & Lifestyle</h2>
+            <p data-translate="fitnessLifestyleDesc">Secure transportation of fitness and lifestyle products.</p>
         </div>
         <div class="service">
             <img src="Photos/service5.jpeg" alt="Service Image">
-            <h2>Automotive Logistics</h2>
-            <p>Vehicle transport, parts distribution, and fleet solutions.</p>
+            <h2 data-translate="automotiveLogistics">Automotive Logistics</h2>
+            <p data-translate="automotiveLogisticsDesc">Vehicle transport, parts distribution, and fleet solutions.</p>
         </div>
     </div>
     <div class="button-container">
-        <button class="cta-btn primary" id="learn-more" onclick="location.href='Services.html'">Learn More</button>
+        <button data-translate="learnMoreB"class="cta-btn primary" id="learn-more" onclick="location.href='Services.html'">Learn More</button>
     </div>
 </section>
 
@@ -92,32 +92,29 @@
         <div class="trust-badges">
             <div class="badge">
                 <img src="Photos/satisfaction_meter.png" alt="1000+ Satisfied Customers">
-                <p>1000+ Satisfied Customers</p>
+                <p data-translate="trustTestimonials">1000+ Satisfied Customers</p>
             </div>
             <div class="badge">
                 <img src="Photos/top_rated.png" alt="Rated #1 in Fast Delivery">
-                <p>Rated #1 in Fast Delivery</p>
+                <p data-translate="satisfactionMeter">Rated #1 in Fast Delivery</p>
             </div>
         </div>
     
         <div class="testimonials">
-            <h2>What Our Customers Say</h2>
+            <h2 data-translate="whatOur">What Our Customers Say</h2>
             <div class="testimonial">
-                <p>"Absolutely amazing service! Fast delivery and excellent customer support."</p>
-                <h4>- Ahmed H.</h4>
+                <p data-translate="testimonial1">"Absolutely amazing service! Fast delivery and excellent customer support."</p>
+                <h4 data-translate="costumer_one">- Ahmed H.</h4>
             </div>
             <div class="testimonial">
-                <p>"I was skeptical at first, but the service exceeded my expectations. Highly recommended!"</p>
-                <h4>- Sarah A.</h4>
+                <p data-translate="testimonial2">"I was skeptical at first, but the service exceeded my expectations. Highly recommended!"</p>
+                <h4 data-translate="costumer_two">- Sarah A.</h4>
             </div>
         </div>
-    </section>
-        <!--optional add button-->
-    </section>
 
     <!--logos-->
     <section class="client-logos">
-        <h2>Trusted by Leading Brands</h2>
+        <h2 data-translate="trustedBy">Trusted by Leading Brands</h2>
         <div class="logo-container">
             <img src="Photos/costumer_one.jpg" alt="Client 1 Logo">
             <img src="Photos/costumer_two.jpg" alt="Client 2 Logo">
@@ -185,6 +182,12 @@
         fitnessLifestyleDesc: "Secure transportation of fitness and lifestyle products.",
         automotiveLogistics: "Automotive Logistics",
         automotiveLogisticsDesc: "Vehicle transport, parts distribution, and fleet solutions.",
+        learnMoreB: "Learn More",
+        trustTestimonials: "Trust Testimonials",
+        satisfactionMeter: "1000+ Satisfied Customers",
+        topRated: "Rated #1 in Fast Delivery",
+        testimonial1: "Absolutely amazing service! Fast delivery and excellent customer support.",
+        testimonial2: "I was skeptical at first, but the service exceeded my expectations. Highly recommended!",
         letsWorkTogether: "Let’s Work Together",
         contactUs: "Contact Us",
         businessHours: "Business Hours: 24/7",
@@ -198,10 +201,12 @@
         whatOurCustomersSay: "What Our Customers Say",
         satisfactionMeter: "1000+ Satisfied Customers",
         topRated: "Rated #1 in Fast Delivery",
+        whatOur: "What Our Customers Say",
         testimonial1: "Absolutely amazing service! Fast delivery and excellent customer support.",
         testimonial2: "I was skeptical at first, but the service exceeded my expectations. Highly recommended!",
         customer1: "- Ahmed H.",
-        customer2: "- Sarah A."
+        customer2: "- Sarah A.",
+        trustedBy: "Trusted by Leading Brands"
     },
     ar: {
         home: "الرئيسية",
@@ -224,6 +229,10 @@
         fitnessLifestyleDesc: "نقل آمن لمنتجات اللياقة البدنية ونمط الحياة.",
         automotiveLogistics: "لوجستيات السيارات",
         automotiveLogisticsDesc: "نقل المركبات وتوزيع الأجزاء وحلول الأسطول.",
+        learnMoreB: "تعرف على المزيد",
+        trustTestimonials: "شهادات الثقة",
+        satisfactionMeter: "أكثر من 1000 عميل راضٍ",
+        topRated: "مصنف رقم 1 في التسليم السريع",
         letsWorkTogether: "دعونا نعمل معا",
         contactUs: "اتصل بنا",
         businessHours: "ساعات العمل: 24/7",
@@ -237,10 +246,12 @@
         whatOurCustomersSay: "ماذا يقول عملاؤنا",
         satisfactionMeter: "1000+ عملاء راضون",
         topRated: "مصنف رقم 1 في التسليم السريع",
+        whatOur: "ماذا يقول عملاؤنا",
         testimonial1: "خدمة مذهلة تماما! تسليم سريع ودعم عملاء ممتاز.",
         testimonial2: "كنت متشككا في البداية، ولكن الخدمة تجاوزت توقعاتي. موصى به للغاية!",
         customer1: "- أحمد ح.",
-        customer2: "- سارة أ."
+        customer2: "- سارة أ.",
+        trustedBy: "موثوق به من قبل العلامات التجارية الرائدة"
     }
 };
 
