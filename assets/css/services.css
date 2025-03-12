@@ -109,7 +109,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("./Photos/s1.png");
+        background-image: url('../../Photos/VNU_M582_01.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -128,13 +128,8 @@ header {
     padding-top: 0; /* Ensure no padding is pushing the content down */
 }
 
-.hero-content h1 {
-    color: var(--text-color);
-    margin-bottom: 20px;
-}
-
 .hero-content h2 {
-    color: black;
+    color: var(--primary-color);
     font-size: 28px;
     margin-bottom: 10px;
 }
@@ -159,7 +154,7 @@ header {
 .services-container h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: black;
+    color: var(--primary-color);
 }
 
 .services-container p {
@@ -227,7 +222,7 @@ header {
 .Why-Choose-Us h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: black;
+    color: var(--primary-color);
     text-align: center; /* Align the heading to the left */
     margin-left: 0; /* Remove any extra left margin */
 }
@@ -237,15 +232,14 @@ header {
 }
 /* Paragraph Styling */
 .Why-Choose-Us p {
-    font-size: 18px;
-    color: var(--text-color);
-    margin-top: 20px;;
-    margin-bottom: 40px;
-    text-align: left; /* Align text to the left */
-    margin-left: 0; /* Remove any extra left margin */
-    display:flex; 
-    flex-direction: column; 
-    align-items: center
+    background-color: white;
+    color: var(--text-color); /* Text color */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 /* Let's Move Section */
@@ -263,10 +257,13 @@ header {
 .lets-move h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: black;
+    color: var(--primary-color);
 }
 
 .lets-move p {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
     font-size: 18px;
     color: var(--text-color);
     margin-bottom: 40px;
@@ -374,19 +371,22 @@ footer {
 @media (max-width: 768px) {
 
     .hero {
-        background: url('Photos/s1.png') no-repeat center center;
+        background: url('../../Photos/VNU_M582_01.png') no-repeat center center;
         background-size: contain;
-        background-position: center;
-        height: 80vh;
+        background-position: 50% 20%;
+        height: auto; /* Let content define height */
+        min-height: 100vh; /* Ensures at least full height */
+        padding-top: 20vh; /* Push content down */
+        background-size: contain;
     }
 
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
+    .services-container {
+        margin-top: -180px; /* Remove extra margin */
+        padding-top: 10px; /* Adjust as needed */
     }
 
-    .footer-section {
-        margin: 20px 0;
+    .services-grid {
+        margin-top: -100px;
     }
 
     .Why-Choose-Us {
@@ -397,6 +397,22 @@ footer {
     .Why-Choose-Us .Why-Choose-Us-Li {
         padding-right: 0; /* Remove the padding on smaller screens */
         margin-bottom: 20px; /* Add margin below the text section */
+    }
+
+    .Why-Choose-Us p {
+        margin-top: 3vh;
+    }
+
+    .lets-move {
+        margin-top: -10vh;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin: 20px 0;
     }
 
 }
