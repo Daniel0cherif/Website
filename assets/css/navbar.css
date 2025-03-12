@@ -34,9 +34,8 @@ header {
     background-color: #222;
     color: white;
     padding: 15px 20px;
-    z-index: 1000; /* Ensure the header is above other elements */
-    position: fixed;
-    width: 100vw;
+    z-index: 10; /* Ensure the header is above other elements */
+    position: relative;
 }
 
 nav {
@@ -44,6 +43,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    white-space: nowrap;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 5px;
 }
 
 /* Title on the Far Left */
@@ -69,7 +75,7 @@ h1 .logo {
     display: flex;
     justify-content: flex-start; /* Move the menu to the right */
     align-items: center;
-flex: 10;
+    flex: 10;
 }
 
 .menu ul {
@@ -77,7 +83,6 @@ flex: 10;
     display: flex;
     gap: 20px;
     padding: 0;
-    margin: 0;
     align-items: center;
 }
 
@@ -111,12 +116,7 @@ flex: 10;
 
 .menu.active {
     display: flex; /* Show the menu */
-}
-
-#language-switcher:hover {
-    color: var(--accent-color); /* Change color on hover */
-}
-
+} 
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -132,7 +132,7 @@ flex: 10;
         width: 100%;
         background: var(--primary-color);
         text-align: center;
-        z-index: 1000; /* Ensure the menu is above other elements */
+        z-index: 100; /* Ensure the menu is above other elements */
     }
 
     .menu.active {

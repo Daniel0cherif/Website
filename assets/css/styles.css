@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
-
+* Define Color Scheme */
 :root {
     --primary-color: #0A3D62; /* Deep Blue */
-    --accent-color: #F4C724; /* Golden Yellow */
+    --accent-color: #F4C724;  /* Golden Yellow */
     --background-color: #F8F9FA; /* Light Gray */
-    --text-color: #333333; /* Dark Gray */
-    --cta-color: #E74C3C; /* Vibrant Red */
+    --text-color: #333333;    /* Dark Gray */
+    --cta-color: #E74C3C;     /* Vibrant Red */
 }
 
 /* Global Reset */
@@ -16,11 +15,6 @@
 }
 
 /* Body Styling */
-html, body {
-    width: 100%;
-    overflow-x: hidden; /* Prevent horizontal overflow */
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
@@ -31,7 +25,13 @@ body {
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: var(--primary-color); /* Set headers to primary color (Deep Blue) */
+}
+
+/* Header Styling */
+header {
+    background-color: #222; /* Dark background */
+    color: var(--text-color); /* Use the defined text color */
+    padding: 15px 20px;
 }
 
 /* Add this CSS rule to style the email link */
@@ -437,6 +437,14 @@ footer {
     color: #ffcc00;
 }
 
+.whatsapp img {
+    width: 200px;  /* Adjust the size as needed */
+    height: auto;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000; /* Keeps it above other elements */
+}
 /* Social Media Links */
 .social-links a {
     color: white;
@@ -512,6 +520,15 @@ footer {
 
     .footer-section {
         margin: 20px 0;
+    }
+
+    .whatsapp img {
+        width: 100px;  /* Adjust the size as needed */
+        height: auto;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000; /* Keeps it above other elements */
     }
 
 }
