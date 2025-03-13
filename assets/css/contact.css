@@ -261,7 +261,6 @@ button:hover {
     border: none;
 }
 
-/* Footer */
 footer {
     background-color: #222;
     color: white;
@@ -291,7 +290,7 @@ footer {
 
 .footer-section p {
     margin: 5px 0;
-    color: #ddd;
+    color: white;
 }
 
 .footer-section ul {
@@ -313,6 +312,14 @@ footer {
     color: #ffcc00;
 }
 
+.whatsapp img {
+    width: 200px;  /* Adjust the size as needed */
+    height: auto;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000; /* Keeps it above other elements */
+}
 /* Social Media Links */
 .social-links a {
     color: white;
@@ -323,15 +330,6 @@ footer {
 
 .social-links a:hover {
     color: #ffcc00;
-}
-
-/* Footer Bottom */
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #444;
-    font-size: 14px;
 }
 
 /* Responsive Design */
@@ -360,5 +358,14 @@ footer {
         margin: 0 auto; 
         padding: 20px; 
         
+    }
+
+    .whatsapp img {
+        width: 100px;  /* Adjust the size as needed */
+        height: auto;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000; /* Keeps it above other elements */
     }
 }
